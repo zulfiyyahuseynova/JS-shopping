@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css" />
+    <script src="https://kit.fontawesome.com/33e495fb35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" style = 'height: 100px'>
+        <div class="container">
+          <h2  style = 'color: white'>Logo</h2>
+          <a href="#" id="cartBtn"><i class="fas fa-cart-arrow-down"></i></a>
+          
+        </div>
+      </nav>
+      
+      <div class = 'container'>
+          <div class = 'row'>
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dsmcdn.com//ty399/product/media/images/20220417/20/93296850/449507344/1/1_org.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">White Shoe</h3>
+                      <h4 class="card-text">$100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dsmcdn.com//ty284/product/media/images/20220101/17/20090689/132619818/1/1_org.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Red Shoe</h3>
+                      <h4 class="card-text">$80</h4>
+                      <a  class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dsmcdn.com//ty152/product/media/images/20210729/18/113801717/8828009/1/1_org.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Black Shoe</h3>
+                      <h4 class="card-text">$50</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+            
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dsmcdn.com//ty429/product/media/images/20220511/18/109588673/468614228/1/1_org.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">White T-Shirt</h3>
+                      <h4 class="card-text">$100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dsmcdn.com//ty389/product/media/images/20220408/17/86480761/441275873/1/1_org.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Grey T-Shirt</h3>
+                      <h4 class="card-text">$30</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class = 'col-md-4 col-lg-4'>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://cdn.dsmcdn.com/ty414/product/media/images/20220502/13/100977644/464510940/1/1_org_thumb.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Green T-Shirt</h3>
+                      <h4 class="card-text">$100</h4>
+                      <a class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="uk-overflow-auto container" style = 'width: 70%'>
+            <table class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+              <thead>
+                <tr>
+                    <th class="uk-table-shrink"></th>
+                    <th class="uk-table-small sty"><h3>ITEM</h3></th>
+                    <th class="uk-table-small"></th>
+                    <th class="uk-width-small sty"><h3>PRICE</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>QUANTITY</h3></th>
+                    <th class="uk-table-shrink uk-text-small sty"><h3>TOTAL</h3></th>
+
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tr>
+                  <td><img class="uk-preserve-width uk-border-circle"  width="40" alt=""></td>
+                  <td class="uk-table-link">
+                      <h3 class = "item-name"><strong>Grand-Total</strong></h3>
+                  </td>
+                  <td class="uk-text-truncate"><h3></h3></td>
+                  <td class="uk-text-truncate"><h3></h3></td>
+                  <td class="uk-text-truncate grand-total"><h3><strong>$0</strong></h3></td>
+                </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <script src = './assets/js/script.js'></script>
+</body>
+</html>
+
